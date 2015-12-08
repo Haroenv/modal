@@ -1,4 +1,4 @@
-.notice {
+.modal {
     font-size: .8em;
     background-color: #9E9E9E;
     padding: .2rem;
@@ -14,8 +14,7 @@
             align-items: center;
 }
 
-.notice--close {
-    min-width: 1.1em;
+.modal button {
     margin: 0 .5em;
     cursor: pointer;
     -webkit-user-select: none;

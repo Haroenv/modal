@@ -1,30 +1,37 @@
 /**
- * add a notice, removeable by clicking the 'close button'
- * Creates <p class="notice"><span class="notice--close"></span>text</p>
+ * add a modal, removeable by clicking the 'cancel button or the okay button'
+ * Creates:
  * @param  {string} text the notice text
+ * @return {boolean} true if clicked on okay, false if on cancel
  * @author Haroen Viaene <hello@haroen.me>
  * @version 0.1
  */
-var notice = function(text){
-	var notice = document.createElement('p');
-	var close = document.createElement('span');
+var modal = function(text){
+	var modal = document.createElement('div');
+	var cancel = document.createElement('button');
+	var okay = document.createElement('button');
 	var content = document.createTextNode(text);
 
-	notice.appendChild(close);
-	notice.appendChild(content);
+	modal.appendChild(content);
+	modal.appendChild(cancel);
+	modal.appendChild(okay);
 
-	close.className += 'notice--close';
-	notice.className += 'notice';
+	modal.className += 'modal';
+	cancel.className += 'modal--cancel';
+	okay.className += 'modal--okay';
 
-	if ("webkitAppearance" in document.body.style) {
-		close.style.webkitAppearance = "searchfield-cancel-button";
-	} else {
-		close.appendChild(document.createTextNode('✕'));
-	}
+	cancel.innerHTML = 'Cancel';
+	okay.innerHTML = 'OK';
 
-	document.body.insertBefore(notice, document.body.firstChild);
+	document.body.insertBefore(modal, document.body.firstChild);
 
-	close.addEventListener('click',function(){
-		document.body.removeChild(notice);
+	okay.addEventListener('click',function(){
+		document.body.removeChild(modal);
+		return true;
+	});
+
+	cancel.addEventListener('click',function(){
+		document.body.removeChild(modal);
+		return false;
 	});
 };
