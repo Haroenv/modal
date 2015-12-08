@@ -30,6 +30,8 @@ var modal = function(text,agreeCallback,disagreeCallback){
 
 	document.body.insertBefore(modal, document.body.firstChild);
 
+	cancel.focus();
+
 	console.log(modal.querySelector('.modal--okay'));
 
 	modal.querySelector('.modal--okay').addEventListener('click',function(){
