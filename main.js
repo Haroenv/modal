@@ -2,7 +2,8 @@
  * add a modal, removeable by clicking the 'cancel button or the okay button'
  * Creates:
  * @param  {string} text the notice text
- * @return {boolean} true if clicked on okay, false if on cancel
+ * @param {function} the callback function when clicked on 'okay'
+ * @param {function} the callback funtion when clicked on 'cancel'
  * @author Haroen Viaene <hello@haroen.me>
  * @version 0.1
  */
