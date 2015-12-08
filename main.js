@@ -6,17 +6,22 @@
  * @author Haroen Viaene <hello@haroen.me>
  * @version 0.1
  */
-var modal = function(text){
+var modal = function(text,agreeCallback,disagreeCallback){
 	var modal = document.createElement('div');
 	var cancel = document.createElement('button');
 	var okay = document.createElement('button');
-	var content = document.createTextNode(text);
+	var buttons = document.createElement('div');
+	var content = document.createElement('p');
+
+	content.appendChild(document.createTextNode(text));
 
 	modal.appendChild(content);
-	modal.appendChild(cancel);
-	modal.appendChild(okay);
+	modal.appendChild(buttons);
+	buttons.appendChild(cancel);
+	buttons.appendChild(okay);
 
 	modal.className += 'modal';
+	content.className += 'modal--content';
 	cancel.className += 'modal--cancel';
 	okay.className += 'modal--okay';
 
@@ -25,13 +30,15 @@ var modal = function(text){
 
 	document.body.insertBefore(modal, document.body.firstChild);
 
-	okay.addEventListener('click',function(){
+	console.log(modal.querySelector('.modal--okay'));
+
+	modal.querySelector('.modal--okay').addEventListener('click',function(){
 		document.body.removeChild(modal);
-		return true;
+		agreeCallback();
 	});
 
-	cancel.addEventListener('click',function(){
+	modal.querySelector('.modal--cancel').addEventListener('click',function(){
 		document.body.removeChild(modal);
-		return false;
+		disagreeCallback();
 	});
 };
