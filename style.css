@@ -1,24 +1,45 @@
 .modal {
-    font-size: .8em;
     background-color: #9E9E9E;
+
+    font-size: .8em;
+
     padding: .2rem;
-    margin: 0;
-    -webkit-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
+
+    border-radius: .2em;
+
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media all and (min-width: 40rem) {
+    .modal {
+        width: 40vw;
+        left: 30vw;
+    }
 }
 
 .modal button {
     margin: 0 .5em;
     cursor: pointer;
+
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
