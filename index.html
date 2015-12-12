@@ -13,6 +13,7 @@
 	</style>
 </head>
 <body>
+	<p>Look at the console.log() to see what this does</p>
 	<input type="text" id="modalText" value="test">
 	<button id="modalButton">Notice me</button>
 	<p>code on <a href="https://github.com/haroenv/modal">GitHub</a>.</p>
@@ -21,14 +22,13 @@
 	var modalText = document.getElementById('modalText');
 	var modalButton = document.getElementById('modalButton');
 	var okay = function() {
-		document.body.innerHTML += 'clicked on okay.';
+			console.log("okay");
 	};
 	var cancel = function() {
-		document.body.innerHTML += 'clicked on cancel.';
+			console.log("cancel");
 	};
-	modalButton.addEventListener('click',function() {
-		console.log('clicked');
-		modal(modalText.value,okay,cancel);
+	modalButton.addEventListener('click', function() {
+			modal(modalText.value, okay, cancel);
 	});
 	</script>
 </body>
