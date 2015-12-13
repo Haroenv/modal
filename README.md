@@ -8,14 +8,14 @@ Demo: [haroen.me/modal](https://haroen.me/modal).
 
 # Usage
 
-Link both `style.css` and `main.js` in your html file. Then in a script you can make a new notice by doing
+Link both `style.css` and `modal.js` in your html file. Then in a script you can make a new notice by doing
 
 ```js
-if ( modal('the text inside the notice') ) {
-	// clicked on okay
-} else {
-	// clicked on cancel
-}
+modal(modalText.value, function(){
+  // code to evaluate when pressed on okay
+}, function(){
+  // code to evaluate when pressed on cancel
+});
 ```
 
 # Used by
