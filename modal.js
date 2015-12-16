@@ -33,8 +33,6 @@ var modal = function(text,agreeCallback,disagreeCallback){
 
 	cancel.focus();
 
-	console.log(modal.querySelector('.modal--okay'));
-
 	modal.querySelector('.modal--okay').addEventListener('click',function(){
 		document.body.removeChild(modal);
 		agreeCallback();
