@@ -1,12 +1,12 @@
 # Modal
 
-Give a simple notice at the top of a page, okayable and dismissable with a click.
-
-<!-- ![](https://i.imgur.com/grRUtGU.png) -->
+Give a simple modal at the middletop of a page, okayable and dismissable with a click.
 
 Demo: [haroen.me/modal](https://haroen.me/modal).
 
 # Usage
+
+## manual way
 
 Link both `style.css` and `modal.js` in your html file. Then in a script you can make a new notice by doing
 
@@ -17,6 +17,16 @@ modal(modalText.value, function(){
   // code to evaluate when pressed on cancel
 });
 ```
+
+## browserify
+
+Just require modal as any other CommonJS module after installing it via npm:
+
+```javascript
+var modal = require('modal');
+```
+
+In terms of CSS you have to decide whether you reference the CSS file as described above or use a tool like [parcelify](https://www.npmjs.com/package/parcelify) to bundle the CSS. 
 
 # Used by
 
