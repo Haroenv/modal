@@ -19,6 +19,12 @@ modal(modalText.value, function(){
 ```
 
 ## browserify
+You need to install this via npm first like this:
+
+```sh
+npm install git+https://github.com/haroenv/modal
+```
+
 
 Just require modal as any other CommonJS module after installing it via npm:
 
