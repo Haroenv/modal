@@ -13,23 +13,11 @@
 	</style>
 </head>
 <body>
-	<p>Look at the console.log() to see what this does</p>
+	<p>Demo for <code>modal.js</code>. By <a href="https://haroen.me/">Haroen Viaene</a></p>
 	<input type="text" id="modalText" value="test">
 	<button id="modalButton">Notice me</button>
 	<p>code on <a href="https://github.com/haroenv/modal">GitHub</a>.</p>
-	<script src="https://rawgit.com/Haroenv/modal/master/modal.js"></script>
-	<script>
-	var modalText = document.getElementById('modalText');
-	var modalButton = document.getElementById('modalButton');
-	var okay = function() {
-			console.log("okay");
-	};
-	var cancel = function() {
-			console.log("cancel");
-	};
-	modalButton.addEventListener('click', function() {
-			modal(modalText.value, okay, cancel);
-	});
-	</script>
+    <pre id="output"></pre>
+    <script src="bundle.js"></script>
 </body>
 </html>
