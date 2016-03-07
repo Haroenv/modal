@@ -39,6 +39,8 @@
     var buttons = document.createElement('div');
     var content = document.createElement('p');
 
+    div.setAttribute('role','alertdialog');
+
     content.appendChild(document.createTextNode(text));
 
     div.appendChild(content);
