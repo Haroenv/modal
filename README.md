@@ -32,7 +32,7 @@ Just require modal as any other CommonJS module after installing it via npm:
 var modal = require('modal');
 ```
 
-In terms of CSS you have to decide whether you reference the CSS file as described above or use a tool like [parcelify](https://www.npmjs.com/package/parcelify) to bundle the CSS. 
+In terms of CSS you have to decide whether you reference the CSS file, which is in the `node_modules` folder or use a tool like [parcelify](https://www.npmjs.com/package/parcelify) to bundle the CSS. 
 
 # Used by
 
