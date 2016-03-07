@@ -22,7 +22,7 @@ modal(modalText.value, function(){
 You need to install this via npm first like this:
 
 ```sh
-npm install git+https://github.com/haroenv/modal
+npm install --save git+https://github.com/haroenv/modal
 ```
 
 
