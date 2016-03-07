@@ -5,7 +5,7 @@
  * @param {function} the callback function when clicked on 'okay'
  * @param {function} the callback funtion when clicked on 'cancel'
  * @author Haroen Viaene <hello@haroen.me>
- * @version 0.1
+ * @version 1.0.0
  */
 (function (root, factory) {
   'use strict';

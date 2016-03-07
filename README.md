@@ -22,9 +22,8 @@ modal(modalText.value, function(){
 You need to install this via npm first like this:
 
 ```sh
-npm install --save git+https://github.com/haroenv/modal
+npm install --save git+https://github.com/haroenv/modal.git
 ```
-
 
 Just require modal as any other CommonJS module after installing it via npm:
 
