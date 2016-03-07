@@ -22,7 +22,7 @@ modalButton.addEventListener('click', function() {
  * @param {function} the callback function when clicked on 'okay'
  * @param {function} the callback funtion when clicked on 'cancel'
  * @author Haroen Viaene <hello@haroen.me>
- * @version 0.1
+ * @version 1.0.0
  */
 (function (root, factory) {
   'use strict';
@@ -55,6 +55,8 @@ modalButton.addEventListener('click', function() {
     var okay = document.createElement('button');
     var buttons = document.createElement('div');
     var content = document.createElement('p');
+
+    div.setAttribute('role','alertdialog');
 
     content.appendChild(document.createTextNode(text));
 
@@ -89,4 +91,5 @@ modalButton.addEventListener('click', function() {
   return modal;
 
 });
+
 },{}]},{},[1]);
