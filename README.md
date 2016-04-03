@@ -1,6 +1,6 @@
 # Modal
 
-Give a simple modal at the middletop of a page, okayable and dismissable with a click.
+Give a simple modal at the middle of a page, okayable and dismissable with a click.
 
 Demo: [haroen.me/modal](https://haroen.me/modal).
 
