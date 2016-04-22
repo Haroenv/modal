@@ -60,12 +60,12 @@
 
     cancel.focus();
 
-    div.querySelector('.modal--okay').addEventListener('click',function(){
+    div.querySelector('.modal--button__okay').addEventListener('click',function(){
         document.body.removeChild(div);
         agreeCallback();
     });
 
-    div.querySelector('.modal--cancel').addEventListener('click',function(){
+    div.querySelector('.modal--button__cancel').addEventListener('click',function(){
         document.body.removeChild(div);
         disagreeCallback();
     });
