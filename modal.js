@@ -50,8 +50,8 @@
 
     div.className = 'modal';
     content.className = 'modal--content';
-    cancel.className = 'modal--cancel';
-    okay.className = 'modal--okay';
+    cancel.className = 'modal--button modal--button__cancel';
+    okay.className = 'modal--button modal--button__okay';
 
     cancel.innerHTML = 'Cancel';
     okay.innerHTML = 'OK';
